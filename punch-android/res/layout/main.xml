@@ -6,6 +6,7 @@
     android:orientation="vertical" >
 
     <LinearLayout
+        android:id="@+id/linearLayout1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical" >
@@ -14,8 +15,33 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_launcher" />
-
+        
+        <LinearLayout 
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            ></LinearLayout>
+        
+        <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnExpense"
+            android:text="EXPENSE"
+            android:layout_gravity="center_horizontal"
+            />
+         <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnIncome"
+            android:text="EXPENSE"
+            android:layout_gravity="center_horizontal"
+            />
+        
     </LinearLayout>
+    
+    
+    
 
     <LinearLayout
         android:layout_width="fill_parent"

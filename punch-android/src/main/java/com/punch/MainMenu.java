@@ -20,7 +20,7 @@ import android.widget.Toast;
 import com.dynobjx.core.android.domain.BaseActivity;
 import com.punch.manager.ClientManager;
 
-public class PunchActivity extends BaseActivity implements OnClickListener {
+public class MainMenu extends BaseActivity implements OnClickListener {
 
 	private ImageView ivExpenses;
 	private ImageView ivHome;
