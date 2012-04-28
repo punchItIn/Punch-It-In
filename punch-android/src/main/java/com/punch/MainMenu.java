@@ -6,6 +6,7 @@ import java.util.Calendar;
 
 import android.app.DatePickerDialog;
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -48,7 +49,7 @@ public class MainMenu extends BaseActivity implements OnClickListener {
 	public void onClick(View v) {
 		switch (v.getId()) {
 		case R.id.ivExpenses:
-
+			startActivity(new Intent(this, ExpenseIncomeScreen.class));
 			break;
 		case R.id.ivHome:
 

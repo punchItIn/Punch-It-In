@@ -19,6 +19,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity 
+            android:name=".ExpenseIncomeScreen"
+            android:theme="@android:style/Theme.NoTitleBar"
+            >
+            
+        </activity>
     </application>
 
 </manifest>
