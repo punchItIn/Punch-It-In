@@ -3,5 +3,17 @@
 
     <string name="hello">Hello World, PunchActivity!</string>
     <string name="app_name">Punch</string>
+    
+     <string-array name="categories">
+        <item>HOME</item>
+        <item>FOOD</item>
+        <item>SHOPPING</item>
+        <item>TRANSPORTATION</item>
+        <item>ENTERTAINMENT</item>
+        <item>INSURANCE</item>
+    	<item>HEALTH/FITNESS</item>
+    </string-array>
+    
+    
 
 </resources>
