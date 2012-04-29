@@ -1,0 +1,57 @@
+#badges {
+	margin-top:-30px;
+	margin-left:20px;
+	height:0px;
+	width:0px;
+}
+
+.customButton {
+	background-image: linear-gradient(bottom, rgb(0, 106, 133) 0%,
+		rgb(0, 162, 203) 74%, rgb(7, 183, 227) 100% );
+	background-image: -o-linear-gradient(bottom, rgb(0, 106, 133) 0%,
+		rgb(0, 162, 203) 74%, rgb(7, 183, 227) 100% );
+	background-image: -moz-linear-gradient(bottom, rgb(0, 106, 133) 0%,
+		rgb(0, 162, 203) 74%, rgb(7, 183, 227) 100% );
+	background-image: -webkit-linear-gradient(bottom, rgb(0, 106, 133) 0%,
+		rgb(0, 162, 203) 74%, rgb(7, 183, 227) 100% );
+	background-image: -ms-linear-gradient(bottom, rgb(0, 106, 133) 0%,
+		rgb(0, 162, 203) 74%, rgb(7, 183, 227) 100% );
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(0, 106
+		, 133) ), color-stop(0.74, rgb(0, 162, 203) ),
+		color-stop(1, rgb(7, 183, 227) ) );
+	-moz-box-shadow: 0px 0px 1px 1px #2d94cc;
+	-webkit-box-shadow: 0px 0px 1px 1px #2d94cc;
+	box-shadow: 0px 0px 1px 1px #2d94cc;
+	color: #fff;
+	text-shadow: -1px -1px white, 0.5px 0.5px #ccc;
+	font-size: 20px;
+	font-weight: bold;
+	width: 200px;
+	height: 50px;
+	border-style: solid;
+	border-color: #2d94cc;
+	border-width: 1px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow: 0px 0px 1px 1px #2d94cc;		
+}
+
+#expensesDiv {
+	margin-top:-30px;
+}
+
+#expensesDiv1 {
+	position:relative;
+	top:-80px;
+	left: 420px;	
+}
+
+img.platform {
+	margin-top: 15px;
+	margin-left:20px;
+	height:30px;
+	width:170px;
+}
