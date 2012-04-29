@@ -281,7 +281,7 @@ img.aligncenter {
 
 #page-dashboard-wrapper {
 	overflow: hidden;
-	height: 800px;
+	height: 600px;
 	background-image: linear-gradient(bottom, rgb(231, 237, 240) 97%,
 		rgb(231, 237, 240) 74%, rgb(252, 252, 252) 0% );
 	background-image: -o-linear-gradient(bottom, rgb(231, 237, 240) 97%,
@@ -634,7 +634,7 @@ ul.tabs li {
 }
 
 ul.tabs li a:hover {
-	 
+	 text-decoration: none;
 }
 
 ul.tabs li a {
