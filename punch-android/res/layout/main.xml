@@ -5,15 +5,19 @@
     android:background="#fff"
     android:orientation="vertical" >
 
-    <ImageView 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/header" />
+
+    <ImageView
         android:id="@+id/ivSettings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/settings"
         android:layout_marginLeft="5dip"
         android:layout_marginTop="5dip"
-        />
-    
+        android:src="@drawable/settings" />
+
     <LinearLayout
         android:id="@+id/linearLayout1"
         android:layout_width="fill_parent"
@@ -23,77 +27,80 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/punch_it_in_logo" />
-        
-        <LinearLayout 
-            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dip"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnExpense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dip"
+                android:background="@drawable/inactive_expenses" />
+
+            <Button
+                android:id="@+id/btnIncome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dip"
+                android:background="@drawable/inactive_income" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            
-            >
-            <Button 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/btnExpense"
-            android:text="EXPENSE"
-            android:layout_gravity="center_horizontal"
-            />
-         <Button 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/btnIncome"
-            android:text="INCOME"
-            android:layout_gravity="center_horizontal"
-            />
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnBilling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dip"
+                android:background="@drawable/inactive_bills" />
+
+            <Button
+                android:id="@+id/btnBudget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dip"
+                android:background="@drawable/inactive_budget" />
         </LinearLayout>
-        
-        <LinearLayout 
-            android:orientation="horizontal"
-            android:layout_height="wrap_content"
+
+        <LinearLayout
             android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            >
-            <Button 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/btnBilling"
-            android:text="BILLING"
-            android:layout_gravity="center_horizontal"
-            />
-         <Button 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/btnBudget"
-            android:text="BUDGET"
-            android:layout_gravity="center_horizontal"
-            />
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dip"
+                android:background="@drawable/inactive_accounts" />
+
+            <Button
+                android:id="@+id/btnReports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dip"
+                android:background="@drawable/inactive_overview" />
         </LinearLayout>
-        
-        <LinearLayout 
-            android:orientation="horizontal"
-            android:layout_height="wrap_content"
-            android:layout_width="fill_parent"
-            android:gravity="center_horizontal"
-            >
-            <Button 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/btnAccount"
-            android:text="ACCOUNTS"
-            android:layout_gravity="center_horizontal"
-            />
-         <Button 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/btnReports"
-            android:text="OVERVIEW"
-            android:layout_gravity="center_horizontal"
-            />
-        </LinearLayout>
-        
     </LinearLayout>
-    
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -105,19 +112,31 @@
             android:id="@+id/ivExpenses"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/in_btn_entry" />
-        
+            android:src="@drawable/make_entry" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/footer_divider" 
+            android:layout_marginTop="5dip"/>
+
         <ImageView
             android:id="@+id/ivHome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/in_btn_home" />
+            android:src="@drawable/inactive_home" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/footer_divider"
+            android:layout_marginTop="5dip" />
 
         <ImageView
             android:id="@+id/ivBadge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/in_btn_achievement" />
+            android:src="@drawable/achievement" />
     </LinearLayout>
 
 </RelativeLayout>

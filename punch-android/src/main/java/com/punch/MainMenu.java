@@ -26,6 +26,8 @@ public class MainMenu extends BaseActivity implements OnClickListener {
 	private ImageView ivExpenses;
 	private ImageView ivHome;
 	private ImageView ivBadges;
+	private Button btnOverview;
+	private Button btnExpense;
 
 	@Override
 	public void onCreate(Bundle s) {
@@ -38,7 +40,11 @@ public class MainMenu extends BaseActivity implements OnClickListener {
 		ivExpenses = (ImageView) findViewById(R.id.ivExpenses);
 		ivHome = (ImageView) findViewById(R.id.ivHome);
 		ivBadges = (ImageView) findViewById(R.id.ivBadge);
-
+		btnOverview = (Button) findViewById(R.id.btnReports);
+		btnExpense = (Button) findViewById(R.id.btnExpense);
+		
+		btnExpense.setOnClickListener(this);
+		btnOverview.setOnClickListener(this);
 		ivExpenses.setOnClickListener(this);
 		ivHome.setOnClickListener(this);
 		ivBadges.setOnClickListener(this);
@@ -52,11 +58,18 @@ public class MainMenu extends BaseActivity implements OnClickListener {
 			startActivity(new Intent(this, ExpenseIncomeScreen.class));
 			break;
 		case R.id.ivHome:
-
+			
 			break;
 		case R.id.ivBadge:
-
+			startActivity(new Intent(this, AchievementScreen.class));
 			break;
+		case R.id.btnReports:
+			startActivity(new Intent(this, OverviewScreen.class));
+			break;
+		case R.id.btnExpense:
+			startActivity(new Intent(this, ExpenseIncomeScreen.class));
+			break;
+		
 		default:
 			break;
 		}

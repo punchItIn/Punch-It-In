@@ -25,6 +25,18 @@
             >
             
         </activity>
+        
+         <activity 
+            android:name=".AchievementScreen"
+            android:theme="@android:style/Theme.NoTitleBar"
+            >
+        </activity>
+            
+         <activity 
+            android:name=".OverviewScreen"
+            android:theme="@android:style/Theme.NoTitleBar"
+            >
+          </activity>  
     </application>
 
 </manifest>

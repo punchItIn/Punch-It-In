@@ -3,17 +3,57 @@
 
     <string name="hello">Hello World, PunchActivity!</string>
     <string name="app_name">Punch</string>
-    
-     <string-array name="categories">
+
+    <string-array name="categories">
         <item>HOME</item>
         <item>FOOD</item>
         <item>SHOPPING</item>
-        <item>TRANSPORTATION</item>
         <item>ENTERTAINMENT</item>
-        <item>INSURANCE</item>
-    	<item>HEALTH/FITNESS</item>
+        <item>HEALTH/FITNESS</item>
+        <item>TRANSPORTATION</item>
+        <item>MISCELLANEOUS</item>
     </string-array>
-    
+    <string-array name="home">
+        <item>Rent</item>
+        <item>Mortgage</item>
+        <item>Household Help</item>
+        <item>Pet Care</item>
+    </string-array>
+    <string-array name="food">
+        <item>Grocerries</item>
+        <item>Snacks</item>
+        <item>Cofee Tea</item>
+        <item>Restaurant Fast Food</item>
+    </string-array>
+    <string-array name="shopping">
+        <item>Clothes</item>
+        <item>Kids Toys</item>
+        <item>Books and Magazines</item>
+        <item>Electroonics</item>
+    </string-array>
+     <string-array name="entertainment">
+        <item>Spa</item>
+        <item>Movies</item>
+        <item>Cable</item>
+        <item>DVD Rental</item>
+    </string-array>
+     <string-array name="health">
+        <item>Gym</item>
+        <item>Supplements</item>
+        <item>Yoga</item>
+        <item>Equipment</item>
+    </string-array>
+     <string-array name="transportation">
+        <item>Gas/Fuel</item>
+        <item>Taxi</item>
+        <item>Maintenance</item>
+        <item>Auto Loan</item>
+    </string-array>
+    <string-array name="miscellaneous">
+        <item>Air Tickets</item>
+        <item>Hotel/Lodging</item>
+        <item>Gifts/Charity</item>
+    </string-array>
     
 
 </resources>

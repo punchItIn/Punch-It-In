@@ -6,45 +6,68 @@
     android:orientation="vertical" >
 
     <LinearLayout
+        android:id="@+id/llFooter"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="#00A1CB"
-        android:orientation="horizontal" 
-        android:id="@+id/llFooter">
+        android:orientation="horizontal" >
 
         <ImageView
             android:id="@+id/ivExpenses"
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/ic_launcher" />
+            android:src="@drawable/inactive_makeanentry" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:src="@drawable/footer_divider" />
 
         <ImageView
             android:id="@+id/ivHome"
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/ic_launcher" />
+            android:src="@drawable/inactive_home" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:src="@drawable/footer_divider" />
 
         <ImageView
             android:id="@+id/ivBadge"
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/ic_launcher" />
+            android:src="@drawable/achievement" />
     </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/header" />
+
+    <ImageView
+        android:id="@+id/ivSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        android:src="@drawable/settings" />
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" 
-        android:layout_above="@id/llFooter">
+        android:layout_above="@id/llFooter"
+        android:orientation="vertical" >
 
         <ImageView
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_launcher" />
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dip"
+            android:src="@drawable/logo" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -58,19 +81,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="EXPENSE" />
+                android:background="@drawable/inactivebutton_expenses" />
 
             <Button
                 android:id="@+id/btnIncome"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="INCOME" />
+                android:background="@drawable/inactivebutton_income" />
         </LinearLayout>
 
         <ScrollView
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip" >
 
             <RelativeLayout
                 android:layout_width="fill_parent"
@@ -82,39 +106,47 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="20dip"
                     android:gravity="center_horizontal"
-                    android:orientation="vertical" >
+                    android:orientation="vertical" 
+                    android:focusable="true"
+                        android:focusableInTouchMode="true">
 
                     <Button
                         android:id="@+id/btnDateExpense"
-                        android:layout_width="wrap_content"
+                        android:layout_width="200dip"
                         android:layout_height="wrap_content"
-                        android:text="DATE" />
+                        android:text="DATE"
+                        android:textStyle="bold" />
 
                     <Spinner
                         android:id="@+id/spCategories"
-                        android:layout_width="wrap_content"
+                        android:layout_width="200dip"
                         android:layout_height="wrap_content" />
 
                     <Spinner
                         android:id="@+id/spSubCategories"
-                        android:layout_width="wrap_content"
+                        android:layout_width="200dip"
                         android:layout_height="wrap_content" />
 
                     <EditText
-                        android:layout_width="wrap_content"
+                        android:layout_width="200dip"
                         android:layout_height="wrap_content"
-                        android:hint="AMOUNT" />
+                        android:hint="AMOUNT" 
+                        android:windowSoftInputMode="stateHidden"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"/>
 
                     <EditText
-                        android:layout_width="wrap_content"
+                        android:layout_width="200dip"
                         android:layout_height="wrap_content"
-                        android:hint="PAYEE" />
+                        android:hint="PAYEE"
+                        android:focusable="true"
+                        android:windowSoftInputMode="stateHidden"
+                        android:focusableInTouchMode="true"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="15dip"
                         android:orientation="horizontal" >
 
                         <Button
@@ -122,25 +154,66 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
-                            android:text="NEED" />
+                            android:background="@drawable/inactivebutton_need" />
 
                         <Button
                             android:id="@+id/btnWant"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
-                            android:text="WANT" />
+                            android:background="@drawable/inactivebutton_want" />
                     </LinearLayout>
 
                     <EditText
-                        android:layout_width="wrap_content"
+                        android:layout_width="200dip"
+                        android:layout_height="100dip"
+                        android:gravity="top"
+                        android:hint="NOTES"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:hint="NOTES" />
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="10dip"
+                            android:src="@drawable/share_text" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="10dip"
+                            android:src="@drawable/share_facebookpost" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="10dip"
+                            android:src="@drawable/share_twitterpost" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="10dip"
+                            android:src="@drawable/share_googleplus" />
+                    </LinearLayout>
+
                     <Button
                         android:id="@+id/btnSubmitExpense"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="SUBMIT" />
+                        android:layout_marginTop="3dip"
+                        android:background="@drawable/submit" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -152,19 +225,31 @@
 
                     <Button
                         android:id="@+id/btnDateIncome"
-                        android:layout_width="wrap_content"
+                        android:layout_width="200dip"
                         android:layout_height="wrap_content"
-                        android:text="DATE" />
+                        android:text="DATE"
+                        android:textStyle="bold" />
 
                     <Spinner
                         android:id="@+id/spAccount"
-                        android:layout_width="wrap_content"
+                        android:layout_width="200dip"
                         android:layout_height="wrap_content" />
 
                     <EditText
-                        android:layout_width="wrap_content"
+                        android:layout_width="200dip"
                         android:layout_height="wrap_content"
-                        android:hint="AMOUNT" />
+                        android:hint="AMOUNT" 
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:windowSoftInputMode="stateHidden"/>
+
+                    <EditText
+                        android:layout_width="200dip"
+                        android:layout_height="100dip"
+                        android:gravity="top"
+                        android:hint="NOTES" 
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"/>
 
                     <LinearLayout
                         android:layout_width="fill_parent"
@@ -177,38 +262,34 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
-                            android:text="NEED" />
+                            android:background="@drawable/inactivebutton_dayjob" />
 
                         <Button
                             android:id="@+id/btnSallary"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
-                            android:text="WANT" />
+                            android:background="@drawable/inactivebutton_sideline" />
 
                         <Button
                             android:id="@+id/btnInvestment"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
-                            android:text="WANT" />
+                            android:background="@drawable/inactive_investments" />
                     </LinearLayout>
 
-                    <EditText
+                    <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:hint="TIP" />
-
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:hint="NOTES" />
+                        android:src="@drawable/tipbox" />
 
                     <Button
+                        android:layout_marginTop="10dip"
                         android:id="@+id/btnSubmitIncome"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="SUBMIT" />
+                        android:background="@drawable/inactivebutton_submit"/>
                 </LinearLayout>
             </RelativeLayout>
         </ScrollView>
