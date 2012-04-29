@@ -5,6 +5,15 @@
     android:background="#fff"
     android:orientation="vertical" >
 
+    <ImageView 
+        android:id="@+id/ivSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/settings"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        />
+    
     <LinearLayout
         android:id="@+id/linearLayout1"
         android:layout_width="fill_parent"
@@ -12,9 +21,9 @@
         android:orientation="vertical" >
 
         <ImageView
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_launcher" />
+            android:src="@drawable/punch_it_in_logo" />
         
         <LinearLayout 
             android:orientation="horizontal"
@@ -90,29 +99,25 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="#00A1CB"
         android:orientation="horizontal" >
 
         <ImageView
             android:id="@+id/ivExpenses"
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/ic_launcher" />
-
+            android:src="@drawable/in_btn_entry" />
+        
         <ImageView
             android:id="@+id/ivHome"
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/ic_launcher" />
+            android:src="@drawable/in_btn_home" />
 
         <ImageView
             android:id="@+id/ivBadge"
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/ic_launcher" />
+            android:src="@drawable/in_btn_achievement" />
     </LinearLayout>
 
 </RelativeLayout>
